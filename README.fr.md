@@ -7,7 +7,7 @@
 
 # Labs d'Intelligence Training
 
-Code d'accompagnement des labs pratiques d'**Intelligence Training**, le parcours en ligne *Expert AI Platform Engineering sur AWS* d'[Intelligence Partners](https://the-intelligence-partners.com/training).
+Code d'accompagnement des labs pratiques d'**Intelligence Training**, le parcours en ligne *Forward Deployed Engineer · AI Platform* d'[Intelligence Partners](https://the-intelligence-partners.com/training).
 
 Chaque lab suit pas à pas une leçon du parcours. La leçon explique le pourquoi ; ce dépôt vous donne le code, pour passer votre temps à construire et à comprendre plutôt qu'à recopier.
 

@@ -7,7 +7,7 @@
 
 # Intelligence Training labs
 
-Companion code for the hands-on labs of **Intelligence Training**, the online path *Expert AI Platform Engineering on AWS* by [Intelligence Partners](https://the-intelligence-partners.com/en/training).
+Companion code for the hands-on labs of **Intelligence Training**, the online path *Forward Deployed Engineer · AI Platform* by [Intelligence Partners](https://the-intelligence-partners.com/en/training).
 
 Each lab follows a lesson of the course step by step. The lesson explains the why; this repository gives you the code, so you spend your time building and understanding, not retyping.
 
