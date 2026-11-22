@@ -1,0 +1,39 @@
+name: labs
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        lab:
+          - m05-document-summary-service
+          - m06-crm-mcp-server
+          - m07-rag-assistant-citations
+          - m08-ticket-analysis-agent
+          - m10-first-serverless-service
+          - m11-landing-zone-golden-path
+          - m12-bedrock-rag-guardrails
+          - m13-agentcore-support-agent
+          - m14-llmops-cost-quality-dashboard
+          - m15-agent-red-team
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.5.7
+          terraform_wrapper: false
+      # Each lab ships a test.sh that installs its dependencies and runs its
+      # local checks (unit tests with mocked model and AWS calls, type checks,
+      # terraform fmt and terraform validate on the infrastructure). No AWS credentials are needed.
+      - run: bash labs/${{ matrix.lab }}/test.sh

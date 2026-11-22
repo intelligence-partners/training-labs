@@ -1,0 +1,6 @@
+# Offline checks only. The Lambda functions use the boto3 shipped with the python3.12 runtime.
+boto3==1.44.9
+botocore==1.44.9
+pytest==9.2.0
+python-hcl2==8.2.0
+shellcheck-py==0.11.0.1

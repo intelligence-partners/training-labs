@@ -1,0 +1,6 @@
+forbid(
+  principal,
+  action == AgentCore::Action::"${gateway_target_name}___rembourser",
+  resource == AgentCore::Gateway::"${gateway_arn}"
+)
+when { context.input.montant > ${plafond_remboursement} };

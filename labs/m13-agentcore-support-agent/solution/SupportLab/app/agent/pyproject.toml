@@ -1,0 +1,16 @@
+[project]
+name = "agent"
+version = "0.1.0"
+description = "Acme support agent (lab M13): Strands Agents on Amazon Bedrock AgentCore Runtime"
+requires-python = ">=3.10"
+# Exact versions, tested offline by the lab's test.sh. requirements.txt is the full lock that
+# scripts/package_agent.sh installs into the CodeZip artifact.
+dependencies = [
+    "aws-opentelemetry-distro==0.21.0",
+    "bedrock-agentcore[strands-agents]==1.27.0",
+    "boto3==1.44.9",
+    "botocore==1.44.9",
+    "httpx==0.28.1",
+    "mcp==1.30.0",
+    "strands-agents==1.65.0",
+]

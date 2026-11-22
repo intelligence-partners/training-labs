@@ -1,0 +1,7 @@
+# Offline checks. The agent's own dependencies come from its lock, so the tests run against the
+# exact versions packaged into the runtime artifact.
+-r solution/SupportLab/app/agent/requirements.txt
+cedarpy==4.12.2
+pytest==9.2.0
+python-hcl2==8.2.0
+shellcheck-py==0.11.0.1

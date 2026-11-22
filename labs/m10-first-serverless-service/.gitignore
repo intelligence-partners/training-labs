@@ -1,0 +1,9 @@
+# Terraform working files and local state
+.terraform/
+.terraform-plugin-cache/
+*.tfstate
+*.tfstate.*
+tfplan
+plan.json
+crash.log
+.build/

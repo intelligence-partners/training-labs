@@ -1,0 +1,8 @@
+# Offline tests (test.sh). sentence-transformers and PyTorch are NOT installed: the tests use a
+# deterministic stand-in (tests/fakes/sentence_transformers). Chroma and rank_bm25 are real.
+anthropic==2.12.0
+chromadb==1.5.9
+rank-bm25==0.2.2
+numpy==2.5.5
+boto3==1.44.9
+pytest==9.2.0

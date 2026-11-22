@@ -1,0 +1,3 @@
+# Offline tests (test.sh). Every model and AWS call is mocked.
+-r requirements-bedrock.txt
+pytest==9.2.0

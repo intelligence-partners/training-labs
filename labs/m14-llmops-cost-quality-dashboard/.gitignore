@@ -1,0 +1,8 @@
+# Terraform working files and state (never commit state: it holds account details)
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+terraform.tfvars
+infra/previous-logging-config.json

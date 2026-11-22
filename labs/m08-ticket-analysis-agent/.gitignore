@@ -1,0 +1,5 @@
+# Files written by the agent when you run it
+audit.jsonl
+rapport.md
+escalations.jsonl
+drafts/

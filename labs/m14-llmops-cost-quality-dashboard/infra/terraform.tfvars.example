@@ -1,0 +1,13 @@
+# Copy to terraform.tfvars (ignored by git) and fill in.
+alert_email = "you@example.com"
+
+# Step 4: false if `aws xray get-trace-segment-destination` already shows CloudWatchLogs / ACTIVE.
+enable_transaction_search = true
+
+# Step 8: the ModelId dimension value from `aws cloudwatch list-metrics` (after the first run).
+# model_id_observe = "eu.anthropic.claude-opus-5-5"
+
+# Step 9: twice the v1 average cost per task noted at step 6.
+# cost_alarm_threshold = 0.08
+
+# region = "eu-west-3"

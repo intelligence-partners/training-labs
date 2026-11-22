@@ -1,0 +1,16 @@
+{
+  "openapi": "3.0.3",
+  "info": {"title": "API Support Acme", "version": "1.0.0"},
+  "x-todo": "TODO (step 3): add POST /tickets (operationId createTicket: orderId and summary in the query) and POST /refunds (operationId createRefund: orderId, amountCents as an integer in euro cents, and reason, in the query). Keep one clear description per operation: it becomes the tool description.",
+  "servers": [{"url": "API_URL"}],
+  "paths": {
+    "/orders/{orderId}": {
+      "get": {
+        "operationId": "getOrder",
+        "description": "Renvoie le statut, le transporteur et le montant total en centimes d'une commande, à partir de son identifiant (par exemple A-1042).",
+        "parameters": [{"name": "orderId", "in": "path", "required": true, "schema": {"type": "string"}}],
+        "responses": {"200": {"description": "La commande"}, "404": {"description": "Commande inconnue"}}
+      }
+    }
+  }
+}

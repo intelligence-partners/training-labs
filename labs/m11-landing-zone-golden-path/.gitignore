@@ -1,0 +1,10 @@
+# Terraform working files and local state
+.terraform/
+.terraform-plugin-cache/
+*.tfstate
+*.tfstate.*
+tfplan
+plan.json
+crash.log
+# A module has no lock file of its own: the root modules pin the providers.
+**/infra/modules/*/.terraform.lock.hcl

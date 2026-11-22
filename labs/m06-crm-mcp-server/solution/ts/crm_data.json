@@ -1,0 +1,10 @@
+{
+  "clients": [
+    {"id": "C-1001", "nom": "Aciéries du Rhône", "secteur": "industrie", "ville": "Lyon", "statut": "client", "ca_annuel_eur": 1250000, "interlocuteur": "Claire Martin, directrice des achats", "notes": [{"date": "2026-09-12", "auteur": "Julien", "texte": "Renouvellement du contrat de maintenance prévu en janvier."}]},
+    {"id": "C-1002", "nom": "Mutuelle Atlantique", "secteur": "assurance", "ville": "Nantes", "statut": "prospect", "ca_annuel_eur": 0, "interlocuteur": "Karim Benali, DSI", "notes": []},
+    {"id": "C-1003", "nom": "Transports Vercors", "secteur": "logistique", "ville": "Grenoble", "statut": "client", "ca_annuel_eur": 430000, "interlocuteur": "Sophie Durand, directrice des opérations", "notes": [{"date": "2026-10-02", "auteur": "Nadia", "texte": "Intéressée par l'optimisation des tournées."}]},
+    {"id": "C-1004", "nom": "Clinique du Parc", "secteur": "sante", "ville": "Lyon", "statut": "prospect", "ca_annuel_eur": 0, "interlocuteur": "Dr Paul Leroy, directeur médical", "notes": []},
+    {"id": "C-1005", "nom": "Banque Hexagone", "secteur": "finance", "ville": "Paris", "statut": "client", "ca_annuel_eur": 2100000, "interlocuteur": "Inès Morel, responsable conformité", "notes": []},
+    {"id": "C-1006", "nom": "Fromageries Lescure", "secteur": "agroalimentaire", "ville": "Rodez", "statut": "ancien_client", "ca_annuel_eur": 0, "interlocuteur": "Marc Lescure, gérant", "notes": [{"date": "2025-11-20", "auteur": "Julien", "texte": "Contrat non renouvelé, budget gelé."}]}
+  ]
+}

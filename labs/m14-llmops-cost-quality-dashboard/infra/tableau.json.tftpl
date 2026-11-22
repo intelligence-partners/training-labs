@@ -1,0 +1,60 @@
+{
+  "widgets": [
+    {
+      "type": "metric", "x": 0, "y": 0, "width": 8, "height": 6,
+      "properties": {
+        "title": "Taux de réussite (%)", "region": "${region}", "view": "timeSeries", "period": 300, "stat": "Sum",
+        "metrics": [
+          [{ "expression": "100 * ok1 / tot1", "label": "v1", "id": "e1" }],
+          [{ "expression": "100 * ok2 / tot2", "label": "v2", "id": "e2" }],
+          ["M14/AgentSupport", "TacheReussie", "PromptVersion", "v1", { "id": "ok1", "visible": false }],
+          ["M14/AgentSupport", "TacheTerminee", "PromptVersion", "v1", { "id": "tot1", "visible": false }],
+          ["M14/AgentSupport", "TacheReussie", "PromptVersion", "v2", { "id": "ok2", "visible": false }],
+          ["M14/AgentSupport", "TacheTerminee", "PromptVersion", "v2", { "id": "tot2", "visible": false }]
+        ]
+      }
+    },
+    {
+      "type": "metric", "x": 8, "y": 0, "width": 8, "height": 6,
+      "properties": {
+        "title": "Coût moyen par tâche ($)", "region": "${region}", "view": "timeSeries", "period": 300, "stat": "Average",
+        "metrics": [
+          ["M14/AgentSupport", "CoutTacheUSD", "PromptVersion", "v1"],
+          ["M14/AgentSupport", "CoutTacheUSD", "PromptVersion", "v2"]
+        ]
+      }
+    },
+    {
+      "type": "metric", "x": 16, "y": 0, "width": 8, "height": 6,
+      "properties": {
+        "title": "Lecture du cache (%)", "region": "${region}", "view": "timeSeries", "period": 300, "stat": "Sum",
+        "metrics": [
+          [{ "expression": "100 * lus / tot", "label": "toutes versions", "id": "c1" }],
+          ["M14/AgentSupport", "TokensLusEnCache", { "id": "lus", "visible": false }],
+          ["M14/AgentSupport", "TokensEntreeTotal", { "id": "tot", "visible": false }]
+        ]
+      }
+    },
+    {
+      "type": "metric", "x": 0, "y": 6, "width": 12, "height": 6,
+      "properties": {
+        "title": "Bedrock : TTFT et latence p95 (ms)", "region": "${region}", "view": "timeSeries", "period": 300, "stat": "p95",
+        "metrics": [
+          ["AWS/Bedrock", "TimeToFirstToken", "ModelId", "${model_id_observe}"],
+          ["AWS/Bedrock", "InvocationLatency", "ModelId", "${model_id_observe}"]
+        ]
+      }
+    },
+    {
+      "type": "metric", "x": 12, "y": 6, "width": 12, "height": 6,
+      "properties": {
+        "title": "Bedrock : limitations et erreurs", "region": "${region}", "view": "timeSeries", "period": 300, "stat": "Sum",
+        "metrics": [
+          ["AWS/Bedrock", "InvocationThrottles"],
+          ["AWS/Bedrock", "InvocationServerErrors"],
+          ["AWS/Bedrock", "InvocationClientErrors"]
+        ]
+      }
+    }
+  ]
+}

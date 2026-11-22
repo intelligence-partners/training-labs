@@ -1,0 +1,38 @@
+{
+  "openapi": "3.0.3",
+  "info": {"title": "API Support Acme", "version": "1.0.0"},
+  "servers": [{"url": "API_URL"}],
+  "paths": {
+    "/orders/{orderId}": {
+      "get": {
+        "operationId": "getOrder",
+        "description": "Renvoie le statut, le transporteur et le montant total en centimes d'une commande, à partir de son identifiant (par exemple A-1042).",
+        "parameters": [{"name": "orderId", "in": "path", "required": true, "schema": {"type": "string"}}],
+        "responses": {"200": {"description": "La commande"}, "404": {"description": "Commande inconnue"}}
+      }
+    },
+    "/tickets": {
+      "post": {
+        "operationId": "createTicket",
+        "description": "Ouvre un ticket pour l'équipe support humaine, avec un résumé de la demande du client.",
+        "parameters": [
+          {"name": "orderId", "in": "query", "required": true, "schema": {"type": "string"}},
+          {"name": "summary", "in": "query", "required": true, "schema": {"type": "string"}}
+        ],
+        "responses": {"201": {"description": "Ticket créé"}}
+      }
+    },
+    "/refunds": {
+      "post": {
+        "operationId": "createRefund",
+        "description": "Rembourse tout ou partie d'une commande. Le montant est en centimes d'euro : 12,50 euros s'écrit 1250.",
+        "parameters": [
+          {"name": "orderId", "in": "query", "required": true, "schema": {"type": "string"}},
+          {"name": "amountCents", "in": "query", "required": true, "schema": {"type": "integer"}},
+          {"name": "reason", "in": "query", "required": true, "schema": {"type": "string"}}
+        ],
+        "responses": {"201": {"description": "Remboursement accepté"}}
+      }
+    }
+  }
+}

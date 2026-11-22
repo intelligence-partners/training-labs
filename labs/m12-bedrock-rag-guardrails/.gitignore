@@ -1,0 +1,12 @@
+# Terraform working files and local state (the state holds the lab identifiers)
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+terraform.tfvars
+build/
+.terraform-plugin-cache/
+
+# Lab outputs
+sortie.json
+lab-ids.env

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "KB-01",
+    "title": "Erreur 401 SSO après une mise à jour",
+    "content": "Depuis la version 4.2, le certificat de signature SSO est renouvelé. Si tous les utilisateurs d'un client reçoivent une erreur 401 SSO, l'administrateur du client doit importer le nouveau certificat dans son fournisseur d'identité. Incident bloquant pour tout le client : priorité P1 et escalade vers l'équipe technique si le problème persiste après import."
+  },
+  {
+    "id": "KB-02",
+    "title": "Facture prélevée deux fois",
+    "content": "Un double prélèvement est remboursé par l'équipe facturation sous cinq jours ouvrés. Le support niveau 1 ne peut pas rembourser : il escalade vers l'équipe facturation avec le numéro de facture. Priorité P3."
+  },
+  {
+    "id": "KB-03",
+    "title": "Exporter des données en CSV",
+    "content": "Menu Dossiers, bouton Exporter, format CSV. L'export contient les colonnes visibles dans la vue courante. Question d'usage : priorité P4."
+  },
+  {
+    "id": "KB-04",
+    "title": "Tableau de bord lent",
+    "content": "Une lenteur limitée à quelques utilisateurs vient le plus souvent d'un filtre de période trop large enregistré dans leur vue. Leur demander de réinitialiser la vue (menu Affichage, Réinitialiser). Priorité P3 ; P2 si tous les utilisateurs sont touchés."
+  }
+]

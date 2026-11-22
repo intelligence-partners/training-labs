@@ -1,0 +1,14 @@
+# Terraform working files and local state (the state holds the API key: never commit it)
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+terraform.tfvars
+.terraform-plugin-cache/
+
+# Build output (CodeZip artifact, Lambda zip)
+build/
+
+# Secrets of the lab
+.acme-api-key
+.env

@@ -1,0 +1,10 @@
+{
+  "clients": [
+    {"id": "C-1001", "nom": "Aciéries du Rhône", "secteur": "industrie", "ville": "Lyon", "statut": "client", "ca_annuel_eur": 1250000, "interlocuteur": "Claire Martin, purchasing director", "notes": [{"date": "2026-09-12", "auteur": "Julien", "texte": "Maintenance contract renewal planned for January."}]},
+    {"id": "C-1002", "nom": "Mutuelle Atlantique", "secteur": "assurance", "ville": "Nantes", "statut": "prospect", "ca_annuel_eur": 0, "interlocuteur": "Karim Benali, CIO", "notes": []},
+    {"id": "C-1003", "nom": "Transports Vercors", "secteur": "logistique", "ville": "Grenoble", "statut": "client", "ca_annuel_eur": 430000, "interlocuteur": "Sophie Durand, operations director", "notes": [{"date": "2026-10-02", "auteur": "Nadia", "texte": "Interested in route optimization."}]},
+    {"id": "C-1004", "nom": "Clinique du Parc", "secteur": "sante", "ville": "Lyon", "statut": "prospect", "ca_annuel_eur": 0, "interlocuteur": "Dr Paul Leroy, medical director", "notes": []},
+    {"id": "C-1005", "nom": "Banque Hexagone", "secteur": "finance", "ville": "Paris", "statut": "client", "ca_annuel_eur": 2100000, "interlocuteur": "Inès Morel, head of compliance", "notes": []},
+    {"id": "C-1006", "nom": "Fromageries Lescure", "secteur": "agroalimentaire", "ville": "Rodez", "statut": "ancien_client", "ca_annuel_eur": 0, "interlocuteur": "Marc Lescure, manager", "notes": [{"date": "2025-11-20", "auteur": "Julien", "texte": "Contract not renewed, budget frozen."}]}
+  ]
+}

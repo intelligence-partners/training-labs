@@ -1,0 +1,7 @@
+# Copy to terraform.tfvars (ignored by git) and adjust.
+# region = "eu-west-1"   # if ApplyGuardrail is not offered in eu-west-3 (check the date of your check)
+# prompt_attack_strength = "HIGH"
+
+# Optional AgentCore Policy rule, if you built the Gateway of the AgentCore module lab:
+# policy_engine_id = "<policy engine id>"
+# gateway_arn      = "arn:aws:bedrock-agentcore:eu-west-3:111122223333:gateway/support-gateway"

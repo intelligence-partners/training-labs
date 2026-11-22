@@ -1,0 +1,4 @@
+# Runtime dependencies of the lab (exact versions tested with this repository).
+anthropic==2.12.0
+# Only for the optional MODEL_PROVIDER=bedrock switch (Converse API).
+boto3==1.44.9

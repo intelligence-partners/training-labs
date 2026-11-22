@@ -1,0 +1,3 @@
+# Optional: bedrock_mcp_client.py (Amazon Bedrock Converse API as the model, this repo as the MCP client).
+-r requirements.txt
+boto3==1.44.9

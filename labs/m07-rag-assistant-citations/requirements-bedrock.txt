@@ -1,0 +1,3 @@
+# Optional: MODEL_PROVIDER=bedrock (Amazon Bedrock Converse API).
+-r requirements.txt
+boto3==1.44.9
