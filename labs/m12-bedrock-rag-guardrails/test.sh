@@ -29,7 +29,7 @@ export TF_PLUGIN_CACHE_DIR="${TF_PLUGIN_CACHE_DIR:-$LAB_DIR/.terraform-plugin-ca
 mkdir -p "$TF_PLUGIN_CACHE_DIR"
 terraform fmt -check -recursive
 for dir in solution/terraform starter/terraform; do
-  terraform -chdir="$dir" init -backend=false -input=false -lockfile=readonly >/dev/null
+  terraform -chdir="$dir" init -backend=false -input=false >/dev/null
   terraform -chdir="$dir" validate -no-color
 done
 
